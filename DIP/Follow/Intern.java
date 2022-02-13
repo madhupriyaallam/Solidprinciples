@@ -3,9 +3,9 @@ package SolidPrinciplesNew.DIP.Follow;
 import java.util.HashMap;
 
 public class Intern implements NewIntern{
-     public Intern intern = new Intern();
+     public static Intern intern = new Intern();
 
-    public Intern getUser(){
+    public static Intern getUser(){
         return intern;
     }
 
