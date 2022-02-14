@@ -13,6 +13,7 @@ public class Associate implements NewIntern{
 
     @Override
     public void addIntern(HashMap<String, String> intern) {
-        throw new AssertionError("Associate Engineer can't be added into Intern's list");
+        //throw new AssertionError("Associate Engineer can't be added into Intern's list");
+        System.out.println("Associate Engineer can't be added into Intern's list");
     }
 }

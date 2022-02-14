@@ -17,6 +17,7 @@ public class Intern implements NewEmployee{
 
     @Override
     public void addEmployee(HashMap<String, Integer> associate) {
-        throw new AssertionError("Associate Engineer can't be added into Intern's list");
+        //throw new AssertionError("Associate Engineer can't be added into Intern's list");
+        System.out.println("Associate Engineer can't be added into Intern's list");
     }
 }

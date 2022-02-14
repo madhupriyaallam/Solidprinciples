@@ -9,8 +9,8 @@ public class Company {
         Intern i = new Intern("Madhu", "madhu@123");
         i.addIntern(intern);
         i.addEmployee(associate);
-//        Associate a1 = new Associate("sai", "sai@123", 3);
-//        a1.addIntern(intern);
-//        a1.addEmployee(associate);
+        Associate a1 = new Associate("sai", "sai@123", 3);
+        a1.addIntern(intern);
+        a1.addEmployee(associate);
     }
 }
