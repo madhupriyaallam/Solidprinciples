@@ -4,14 +4,12 @@ import java.util.HashMap;
 
 public class Company {
     public static void main(String[] args) {
-        HashMap<String, String> interns = new HashMap<>();
-        HashMap<String, Integer> associate = new HashMap<>();
-        NewIntern i = Intern.getUser();
-        Associate a = new Associate(3,i);
-        i.addIntern(interns,"madhu@123","madhu");
-        a.addEmployee(associate,"madhu@123","madhu");
-        a.removeIntern(interns,"madhu@123","madhu");
-        Associate a1 = new Associate(4);
-        a1.addEmployee(associate,"sai@123","sai");
+        HashMap<String, Integer> employees = new HashMap<>();
+        NewEmployee n1 = new Associate("madhu@123","madhu",2);
+        NewEmployee n2 = new SDE("sai@123","sai",4);
+        Employee emp1 = new Employee(n1);
+        emp1.addNewEmployee(employees);
+        Employee emp2 = new Employee(n2);
+        emp2.addNewEmployee(employees);
     }
 }
